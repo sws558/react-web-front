@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# React 企业网站模板
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+这是一个使用 React 开发的现代化企业网站模板，具有清晰的布局和用户友好的界面设计。
 
-## Available Scripts
+## 项目截图
 
-In the project directory, you can run:
+### 登录界面
+![登录界面](./images/login.png)
 
-### `npm start`
+### 主界面
+![主界面](./images/main.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 功能特点
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔐 用户认证系统
+  - 登录功能
+  - 注册功能
+  - 路由保护
 
-### `npm test`
+- 📱 响应式设计
+  - 适配各种屏幕尺寸
+  - 移动端友好的导航栏
+  - 流畅的动画效果
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🎨 现代化界面
+  - 清晰的布局结构
+  - 优雅的配色方案
+  - 平滑的过渡动画
 
-### `npm run build`
+- 📋 主要页面
+  - 首页：展示公司最新动态
+  - 关于：介绍公司信息
+  - 服务：展示公司提供的服务
+  - 联系：包含联系方式和留言表单
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 技术栈
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React 18
+- React Router v6
+- 原生CSS-in-JS样式方案
+- LocalStorage 用户状态管理
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 安装说明
 
-### `npm run eject`
+1. 克隆项目
+```bash
+git clone [项目地址]
+cd react-basic
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. 安装依赖
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. 启动开发服务器
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. 构建生产版本
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 项目结构
 
-## Learn More
+```
+src/
+  ├── components/        # 通用组件
+  │   ├── Header.js     # 页头组件
+  │   ├── Sidebar.js    # 侧边栏导航
+  │   └── Login.js      # 登录组件
+  │
+  ├── pages/            # 页面组件
+  │   ├── Home.js       # 首页
+  │   ├── About.js      # 关于页面
+  │   ├── Services.js   # 服务页面
+  │   └── Contact.js    # 联系页面
+  │
+  └── App.js            # 应用入口和路由配置
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 使用说明
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. 访问登录页面 `/login`
+2. 使用以下任意账号登录：
+   - 用户名：任意
+   - 密码：任意
+3. 登录后可以访问所有功能页面
+4. 点击右上角的"退出登录"按钮可以退出当前账号
 
-### Code Splitting
+## 自定义配置
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. 修改主题颜色
+   - 在各组件中更新 style 对象中的颜色值
+   - 主要使用的颜色：
+     - 主色：`#2c3e50`
+     - 背景色：`#f8f9fa`
+     - 文字颜色：`#4a5568`
 
-### Analyzing the Bundle Size
+2. 添加新页面
+   - 在 `src/pages` 目录下创建新的页面组件
+   - 在 `App.js` 中添加新的路由配置
+   - 在 `Sidebar.js` 中添加新的导航项
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 开发建议
 
-### Making a Progressive Web App
+1. 组件开发
+   - 保持组件的单一职责
+   - 使用函数式组件和 Hooks
+   - 注意组件的可重用性
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. 样式管理
+   - 使用 CSS-in-JS 保持样式的模块化
+   - 保持样式的一致性
+   - 注意响应式设计
 
-### Advanced Configuration
+3. 状态管理
+   - 合理使用 React Hooks
+   - 适当使用 LocalStorage
+   - 注意状态更新的性能
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 贡献指南
 
-### Deployment
+欢迎提交 Issue 和 Pull Request 来帮助改进这个项目。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 许可证
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License
